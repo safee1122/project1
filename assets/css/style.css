@@ -171,7 +171,7 @@ body {
     
 
 }
-.m-text{
+.mission h1{
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
@@ -201,7 +201,26 @@ body {
 
 /* detail section start */
 .detail{
-    background:#112828;;
+    background:var(--smc-main-green-color);
+}
+.detail p{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 182.19%;
+    /* or 36px */
+    color: var(--smc-main-text-white-color);
+}
+.detail h1 {
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 44px;
+    color: var(--smc-main-text-white-color);
+    text-transform: uppercase;
+
 }
 
 
