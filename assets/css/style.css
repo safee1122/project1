@@ -1,0 +1,221 @@
+/* Reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, button, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, nav, output, section, time, mark, audio, video, input, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* inherits the browser's font properties: font-size 16px */
+    font: inherit;
+    /*  specifies the vertical alignment of an inline element */
+    vertical-align: baseline;
+    box-sizing: border-box;
+    /*  specifies the height of line boxes within the element. */
+    line-height: 1;
+    border-radius: 0;
+    /* no outline around anything */
+    outline: none;
+    /* inherit the color value of the parent */
+    color: inherit;
+}
+
+ol, ul {
+    /* no bullets in lists */
+    list-style: none;
+}
+
+a {
+    /* the color of the font for anchor tags is inherited */
+    color: inherit;
+    /* no underline */
+    text-decoration: none;
+}
+
+button {
+    /* turn the cursor into a pointing finger */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+blockquote, q {
+    /* no quotes */
+    quotes: none;
+}
+
+table {
+    /* no spacing between cells*/
+    border-spacing: 0;
+    /*borders are collapsed - adjacent table cells share borders */
+    border-collapse: collapse;
+}
+/* General Styling */
+:root {
+    /*CONTRAST-COLORS*/
+    --smc-main-green-color: #112828;
+    --smc-main-golden-color: #F6E391;
+    --smc-main-dark-blue-color: #121524;
+    --smc-main-brown-color: #2E2E2E;
+    --smc-main-text-brown-color: #525252;
+    --smc-main-text-white-color: #FFFFFF;
+
+    /*==================================================*/
+    --smc-main-border-rad1: 10px;
+    --smc-main-border-rad2: 5px; 
+}
+
+@font-face {
+    font-family: "Gill Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Gill-Sans-Light.otf") format("otf"); }
+  @font-face {
+    font-family: "Gill Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Gill-Sans.otf") format("otf"); }
+  @font-face {
+    font-family: "Gill Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Gill-Sans-Medium.otf") format("otf"); }
+  @font-face {
+    font-family: "Gill Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/Gill-Sans-Bold.otf") format("otf"); }
+  @font-face {
+    font-family: "Gill Sans";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/Gill-Sans-Heavy.otf") format("otf"); }
+
+body {
+    font-family: "Gill Sans";
+}
+
+/* Header Styling */
+.logo-container {
+    background-color:  var(--smc-main-green-color);
+    padding: 10px;
+}
+.logo-container .logo {
+    width: 329px;
+    height: 80px;
+    margin: auto;
+}
+.logo-container img {
+    width: 100%;
+}
+/* Header Style End */
+
+/* Hero Styling */
+.hero-container {
+    background-color: var(--smc-main-dark-blue-color);
+}
+.hero-container .bg-light {
+    background-color: var(--smc-main-dark-blue-color)!important;
+}
+.hero-container .navbar-light .navbar-nav .nav-link {
+    color: var(--smc-main-text-white-color);
+}
+.hero-container .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--smc-main-golden-color);
+}
+.hero-content h1 {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 182.19%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--smc-main-golden-color);
+}
+.hero-content p {
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: var(--smc-main-text-white-color);
+}
+.hero-content button{
+    width: 283px;
+    height: 53px;
+    background: #F6E391;
+    box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    color:var(black);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+
+}
+
+/* Hero Style End */
+
+/* mission styling start */
+.mission{
+    height: 40vh;
+    width: 100%;
+    background-color: var(--smc-main-brown-color);
+    background-image: url(/assets/images/Place-holder-logo-graphics-01-p-500\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    
+
+}
+.m-text{
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--smc-main-text-white-color);
+    text-transform: uppercase;
+    position: relative;
+    top: 45%;
+    
+}
+.mission p {
+    position: relative;
+    font-family: 'Gill Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 182.19%;
+    /* or 36px */
+    text-align: center;
+    color: var(--smc-main-text-white-color);
+    top: 45%;
+     
+}
+/* mission section end */
+
+/* detail section start */
+.detail{
+    background:#112828;;
+}
+
+
+/* Footer Styling */
+
+.footer .copy-right p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: var(--smc-main-text-brown-color);
+    text-align: center;
+    margin-top: -12px;
+
+}
+section.footer .logo-container {
+    padding: 33px 0px 13px;
+}
