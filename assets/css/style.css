@@ -113,15 +113,31 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.hero-container .bg-light {
-    background-color: var(--smc-main-dark-blue-color);
+.hero-container .nav-link{
+    color:  var(--smc-main-text-white-color)!important;
 }
-.hero-container .navbar-nav  .nav-link {
-    color: var(--smc-main-text-white-color);
+.hero-container .nav-link.active
+{ color: var(--smc-main-golden-color)!important;
 }
-.hero-container .nav-container .navbar-nav .nav-item .nav-link:hover  {
-    color: var(--smc-main-golden-color);
+.header-container button{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: var(--smc-main-green-color);
 }
+.line1{
+    width: 40px;
+    height: 2px;
+    background-color: #F6E391;
+    margin: 10px 0;
+}
+@media screen and (min-width:992px) {
+    .show-mbl{
+        display: none;
+    }
+    
+}
+
 .hero-content h1 {
     font-family: 'Gill Sans';
     font-style: normal;
@@ -246,6 +262,15 @@ body {
         display: block;
     }
  }
+ /* detail section end */
+/* hero2  start */
+.hero-container2 {
+    background-color: var(--smc-main-dark-blue-color);
+    background-image: url(/assets/images/photon-atlas\ 2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right;
+}
 
 
 
