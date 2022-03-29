@@ -122,7 +122,7 @@ body {
 .header-container button{
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 0;
     color: var(--smc-main-green-color);
 }
 .line1{
@@ -249,7 +249,7 @@ body {
     position: absolute;
     left: 800px;
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:992px){
     
   
     .detail h1{
