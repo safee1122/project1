@@ -109,14 +109,17 @@ body {
 /* Hero Styling */
 .hero-container {
     background-color: var(--smc-main-dark-blue-color);
+    background-image: url(/assets/images/photon-atlas-\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .hero-container .bg-light {
-    background-color: var(--smc-main-dark-blue-color)!important;
+    background-color: var(--smc-main-dark-blue-color);
 }
-.hero-container .navbar-light .navbar-nav .nav-link {
+.hero-container .navbar-nav  .nav-link {
     color: var(--smc-main-text-white-color);
 }
-.hero-container .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+.hero-container .nav-container .navbar-nav .nav-item .nav-link:hover  {
     color: var(--smc-main-golden-color);
 }
 .hero-content h1 {
@@ -202,6 +205,7 @@ body {
 /* detail section start */
 .detail{
     background:var(--smc-main-green-color);
+
 }
 .detail p{
     font-family: 'Gill Sans';
@@ -209,6 +213,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     line-height: 182.19%;
+    text-align: center;
     /* or 36px */
     color: var(--smc-main-text-white-color);
 }
@@ -220,8 +225,28 @@ body {
     line-height: 44px;
     color: var(--smc-main-text-white-color);
     text-transform: uppercase;
+    text-align: center;
 
 }
+.detail img {
+    display: none;
+    position: absolute;
+    left: 800px;
+}
+@media screen and (min-width:768px){
+    
+  
+    .detail h1{
+        text-align: left;
+    }
+    .detail p{
+        text-align: left;
+    }
+    .detail img{
+        display: block;
+    }
+ }
+
 
 
 /* Footer Styling */
