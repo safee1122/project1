@@ -94,7 +94,7 @@ body {
 /* Header Styling */
 .logo-container {
     background-color:  var(--smc-main-green-color);
-    padding: 10px;
+    padding: 0;
 }
 .logo-container .logo {
     width: 329px;
@@ -102,6 +102,12 @@ body {
     margin: auto;
 }
 .logo-container img {
+    position: relative;
+    left:-15px;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
     width: 100%;
 }
 /* Header Style End */
@@ -109,9 +115,16 @@ body {
 /* Hero Styling */
 .hero-container {
     background-color: var(--smc-main-dark-blue-color);
-    background-image: url(/assets/images/photon-atlas-\ 1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+@media screen and (min-width:768px) {
+    .hero-container {
+        background-color: var(--smc-main-dark-blue-color);
+        background-image: url(/assets/images/photon-atlas-\ 1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    
 }
 .hero-container .nav-link{
     color:  var(--smc-main-text-white-color)!important;
@@ -119,20 +132,22 @@ body {
 .hero-container .nav-link.active
 { color: var(--smc-main-golden-color)!important;
 }
-.header-container button{
+#btn{
     position: absolute;
-    top: 20px;
-    right: 0;
-    color: var(--smc-main-green-color);
+    display: inline;
+    right:-10px;
+    top: 19px;
+    color: #112828;
 }
 .line1{
-    width: 40px;
-    height: 2px;
+    
+    width: 20px;
+    height: 1.5px;
     background-color: #F6E391;
-    margin: 10px 0;
+    margin: 8px 0px;
 }
-@media screen and (min-width:992px) {
-    .show-mbl{
+@media screen and (min-width:768px) {
+    #btn {
         display: none;
     }
     
@@ -142,20 +157,34 @@ body {
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 45px;
-    line-height: 182.19%;
+    font-size: 35px;
+    line-height: 140%;
     text-align: center;
     text-transform: uppercase;
     color: var(--smc-main-golden-color);
+}
+@media screen and (min-width:768px) {
+    .hero-content h1{
+        font-size: 45px;
+        line-height: 182.19%;
+    }
+    
 }
 .hero-content p {
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
     text-align: center;
     color: var(--smc-main-text-white-color);
+    padding: 10px;
+}
+@media screen and (min-width:768px) {
+    .hero-content p {  
+    font-size: 25px;
+    line-height: 30px;}
+    
 }
 .hero-content button{
     width: 283px;
@@ -181,7 +210,7 @@ body {
 
 /* mission styling start */
 .mission{
-    height: 40vh;
+    height: 304px;
     width: 100%;
     background-color: var(--smc-main-brown-color);
     background-image: url(/assets/images/Place-holder-logo-graphics-01-p-500\ 1.png);
@@ -194,8 +223,8 @@ body {
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 37px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 30px;
     text-align: center;
     color: var(--smc-main-text-white-color);
     text-transform: uppercase;
@@ -203,18 +232,31 @@ body {
     top: 45%;
     
 }
+@media screen and (min-width:768px) {
+    .mission h1{
+        font-size: 37px;
+        line-height: 44px;
+    }
+    
+}
 .mission p {
     position: relative;
     font-family: 'Gill Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 182.19%;
+    font-size: 18px;
+    line-height: 150%;
     /* or 36px */
     text-align: center;
     color: var(--smc-main-text-white-color);
-    top: 45%;
+    top: 42%;
      
+}
+@media screen and (min-width:768px){
+    .mission p {
+        font-size: 20px;
+        line-height: 182%;}
+    
 }
 /* mission section end */
 
@@ -275,16 +317,21 @@ body {
 
 
 /* Footer Styling */
+.footer{
 
+    background-color: var(--smc-main-green-color);
+    
+}
+.footer img{
+    width: 184px;
+    height: 45px;
+}
 .footer .copy-right p {
     font-weight: 500;
     font-size: 15px;
     line-height: 26px;
     color: var(--smc-main-text-brown-color);
     text-align: center;
-    margin-top: -12px;
+    
 
-}
-section.footer .logo-container {
-    padding: 33px 0px 13px;
 }
